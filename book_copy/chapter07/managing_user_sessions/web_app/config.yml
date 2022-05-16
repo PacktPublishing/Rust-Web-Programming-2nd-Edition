@@ -1,0 +1,2 @@
+DB_URL: postgres://username:password@localhost:5433/to_do
+SECRET_KEY: secret
