@@ -1,0 +1,53 @@
+services:
+  nginx:
+    container_name: 'nginx-rust'
+    image: "nginx:latest"
+    ports:
+      - "80:80"
+    links:
+      - rust_app
+      - front_end
+    volumes:
+      - ./nginx_config.conf:/etc/nginx/nginx.conf
+  postgres_production:
+    container_name: 'to-do-postgres-production'
+    image: 'postgres:latest'
+    restart: always
+    ports:
+      - '5433:5432'
+    environment:
+      - 'POSTGRES_USER=username'
+      - 'POSTGRES_DB=to_do'
+      - 'POSTGRES_PASSWORD=password'
+    expose:
+      - 5433
+  redis_production:
+      container_name: 'to-do-redis'
+      image: 'redis:5.0.5'
+      ports:
+        - '6379:6379'
+  rust_app:
+    container_name: rust_app
+    # image: "maxwellflitton/to_do_react:latest"
+    build: "../web_app"
+    restart: always
+    ports:
+      - "8000:8000"
+    links:
+      - postgres_production
+      - redis_production
+    expose:
+      - 8000
+    volumes:
+      - ./rust_config.yml:/config.yml
+    # depends_on:
+    #   - postgres_production
+    #   - redis_production
+  front_end:
+    container_name: front_end
+    image: "maxwellflitton/to_do_react:latest"
+    restart: always
+    ports:
+      - "4000:4000"
+    expose:
+      - 4000

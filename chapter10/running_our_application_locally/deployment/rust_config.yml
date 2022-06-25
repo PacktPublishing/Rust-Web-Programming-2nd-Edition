@@ -1,0 +1,4 @@
+DB_URL: postgres://username:password@postgres_production/to_do
+SECRET_KEY: secret
+EXPIRE_MINUTES: 120
+REDIS_URL: redis://redis_production/
