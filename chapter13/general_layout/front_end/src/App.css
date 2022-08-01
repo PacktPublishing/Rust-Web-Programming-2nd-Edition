@@ -1,0 +1,105 @@
+
+
+.App {
+  background-color: #92a8d1;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
+}
+
+
+@media(min-width: 501px) and (max-width: 550px) {
+  .App {
+    padding: 1px;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+  }
+  .mainContainer {
+    grid-column-start: 2;
+  }
+}
+
+
+@media(min-width: 551px) and (max-width: 1000px) {
+  .App {
+    padding: 1px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+  .mainContainer {
+    grid-column-start: 2;
+  }
+}
+@media(min-width: 1001px) {
+  .App {
+    padding: 1px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .mainContainer {
+    grid-column-start: 2;
+  }
+}
+
+.itemContainer {
+  background: #034f84;
+  margin: 0.3rem;
+}
+
+
+.itemContainer:hover {
+  background: #034f99;
+}
+
+
+.itemContainer p {
+  color: white;
+  display: inline-block;
+  margin: 0.5rem;
+  margin-right: 0.4rem;
+  margin-left: 0.4rem;
+}
+
+
+.actionButton {
+  display: inline-block;
+  float: right;
+  background: #f7786b;
+  border: none;
+  padding: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
+  color: white;
+}
+
+
+.actionButton:hover {
+  background: #f7686b;
+  color: black;
+}
+
+
+.inputContainer {
+  background: #034f84;
+  margin: 0.3rem;
+  margin-top: 2rem;
+}
+
+
+.inputContainer input {
+  display: inline-block;
+  margin: 0.4rem;
+}
+
+.header {
+  background: #034f84;
+  margin-bottom: 0.3rem;
+}
+
+
+.header p {
+  color: white;
+  display: inline-block;
+  margin: 0.5rem;
+  margin-right: 0.4rem;
+  margin-left: 0.4rem;
+}

@@ -1,0 +1,4 @@
+DB_URL: postgresql://Santiago:1234567890@terraform-20220710164304151900000001.clwkuhiktwui.eu-west-2.rds.amazonaws.com:5432/to_do
+EXPIRE_MINUTES: 120
+REDIS_URL: redis://redis_production/
+SECRET_KEY: secret
