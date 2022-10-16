@@ -10,7 +10,7 @@ function renderItems(items, processType, elementId, processFunction) {
     let placeholder = "<div>"
     let itemsMeta = [];
 
-    for (i = 0; i < items.length; i++) {
+    for (let i = 0; i < items.length; i++) {
         let title = items[i]["title"];
         let placeholderId = processType +
         "-" + title.replaceAll(" ", "-");

@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="1d4dae3a-6682-4da3-b3b9-a787e9a7380a" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../chapter05/creating_custom_components/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../chapter05/creating_custom_components/web_app/javascript/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chapter05/creating_react_app/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../chapter05/creating_react_app/web_app/javascript/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chapter05/inheriting_components/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../chapter05/inheriting_components/web_app/javascript/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chapter05/injecting_css_into_html/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../chapter05/injecting_css_into_html/web_app/javascript/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chapter05/injecting_javascript_into_html/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../chapter05/injecting_javascript_into_html/web_app/javascript/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chapter05/lifting_css_into_react/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../chapter05/lifting_css_into_react/web_app/javascript/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chapter05/making_api_calls_in_react/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../chapter05/making_api_calls_in_react/web_app/javascript/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../chapter05/wrapping_react_in_electron/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../chapter05/wrapping_react_in_electron/web_app/javascript/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/building_our_database/web_app/javascript/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/web_app/javascript/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/javascript/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/javascript/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/javascript/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/javascript/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/deleting_in_the_database/web_app/javascript/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/javascript/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/javascript/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/javascript/main.js" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="ProjectId" id="2GBx6xsrJt5uvHu2AzqxLF8ZCoy" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent"><![CDATA[{
+  "keyToString": {
+    "RunOnceActivity.OpenProjectViewOnStart": "true",
+    "RunOnceActivity.ShowReadmeOnStart": "true",
+    "WebServerToolWindowFactoryState": "false",
+    "nodejs_package_manager_path": "npm",
+    "vue.rearranger.settings.migration": "true"
+  }
+}]]></component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="1d4dae3a-6682-4da3-b3b9-a787e9a7380a" name="Changes" comment="" />
+      <created>1665875607854</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1665875607854</updated>
+      <workItem from="1665875609431" duration="56000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+</project>
