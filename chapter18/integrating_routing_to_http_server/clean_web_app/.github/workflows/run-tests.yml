@@ -1,0 +1,42 @@
+name: run tests
+
+on: [pull_request]
+
+jobs:
+  run-unit-tests:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v2
+      - uses: actions-rs/toolchain@v1
+        with:
+          toolchain: stable
+      - name: run the unit test
+        run: |
+          export SECRET_KEY="secret"
+          export EXPIRE_MINUTES=60
+          cargo test
+  run-integration-test:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v2
+      - name: create environment build and run newman
+        run: |
+          cd tests
+
+          if [ "$(uname -m)" = "arm64" ]
+          then 
+              cp ../builds/arch_build ../Dockerfile
+          else 
+              cp ../builds/server_build ../Dockerfile
+          fi
+
+          docker-compose build --no-cache
+
+          docker-compose up -d
+          sleep 5
+      - uses: actions/checkout@master
+      - uses: matt-ball/newman-action@master
+        with:
+          collection: ./tests/cerberus.postman_collection.json

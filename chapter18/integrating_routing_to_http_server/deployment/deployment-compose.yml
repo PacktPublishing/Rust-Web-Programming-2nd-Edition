@@ -1,0 +1,47 @@
+version: "3.7"
+services:
+  nginx:
+    container_name: 'nginx-rust'
+    image: "nginx:latest"
+    ports:
+      - "80:80"
+    links:
+      - rust_app
+      - front_end
+    volumes:
+      - ./nginx_config.conf:/etc/nginx/nginx.conf
+  redis_production:
+      container_name: 'to-do-redis'
+      image: 'redis:5.0.5'
+      ports:
+        - '6379:6379'
+      volumes:
+        - ./data/redis:/tmp
+      healthcheck:
+        test: ["CMD", "redis-cli", "ping"]
+        interval: 1s
+        timeout: 3s
+        retries: 30
+  rust_app:
+    container_name: rust_app
+    image: "maxwellflitton/to_do_actix:latest"
+    restart: always
+    ports:
+      - "8000:8000"
+    links:
+      - redis_production
+    depends_on:
+      redis_production:
+        condition: service_healthy
+    expose:
+      - 8000
+    volumes:
+      - ./rust_config.yml:/config.yml
+  front_end:
+    container_name: front_end
+    image: "maxwellflitton/to_do_react:latest"
+    restart: always
+    ports:
+      - "4000:4000"
+    expose:
+      - 4000
