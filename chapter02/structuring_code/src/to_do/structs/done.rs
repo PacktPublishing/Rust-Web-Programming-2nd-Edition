@@ -20,8 +20,10 @@ impl Done {
     /// # Returns 
     /// (Done): the constructed struct
     pub fn new(input_title: &str) -> Done {
-        let base = Base::new(input_title, 
-            TaskStatus::DONE);
+        let base = Base {
+            title: input_title.to_string(),
+            status: TaskStatus::DONE
+        };
         return Done{super_struct: base}
     }
 }

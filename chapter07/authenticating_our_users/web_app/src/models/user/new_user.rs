@@ -1,4 +1,4 @@
-extern crate bcrypt;
+// extern crate bcrypt;
 
 use uuid::Uuid;
 use diesel::Insertable;

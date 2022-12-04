@@ -16,5 +16,5 @@ pub async fn edit(to_do_item: web::Json<ToDoItem>, token: JwToken, db: DB) -> Ht
         .set(to_do::columns::status.eq("DONE"))
         .execute(&db.connection);
 
-    return HttpResponse::Ok().json(ToDoItems::get_state())
+    return HttpResponse::Ok().json(ToDoItems::get_state(token.user_id))
 }

@@ -24,23 +24,23 @@ async fn main() -> std::io::Result<()> {
             .wrap_fn(|req, srv|{
                 let passed: bool;
 
-                if *&req.path().contains("/v1/") {
+                if req.path().contains("/v1/") {
                     passed = false;
                 } else {
                     passed = true;
                 }
 
-                let end_result = match passed {
-                    true => {
-                        Either::Left(srv.call(req))
-                    },
-                    false => {
-                        let resp = HttpResponse::NotImplemented().body("v1 API is no longer supported");
-                        Either::Right(
-                            ok(req.into_response(resp).map_into_boxed_body())
-                        )
-                    }
-                };
+                let end_result;
+                if passed == true {
+                    end_result = Either::Left(srv.call(req))
+                }
+                else {
+                    let resp = HttpResponse::NotImplemented().body("v1 API is no longer supported");
+                    end_result = Either::Right(
+                        ok(req.into_response(resp).map_into_boxed_body())
+                    )
+                }
+
                 async move {
                     let result = end_result.await?;
                     Ok(result)

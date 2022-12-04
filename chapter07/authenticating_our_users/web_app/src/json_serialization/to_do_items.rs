@@ -53,13 +53,12 @@ impl ToDoItems {
 
     pub fn get_state() -> ToDoItems {
         let connection = establish_connection();
-        let mut array_buffer = Vec::new();
 
         let items = to_do::table
                                 .order(to_do::columns::id.asc())
                                 .load::<Item>(&connection)
                                 .unwrap();
-
+        let mut array_buffer = Vec::with_capacity(items.len());
         for item in items {
             let status = TaskStatus::new(&item.status.as_str());
             let item = to_do_factory(&item.title, status);

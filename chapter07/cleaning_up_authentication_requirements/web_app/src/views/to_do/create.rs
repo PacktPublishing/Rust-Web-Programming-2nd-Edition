@@ -29,5 +29,5 @@ pub async fn create(token: JwToken, req: HttpRequest, db: DB) -> HttpResponse {
         let _ = diesel::insert_into(to_do::table).values(&new_post)
             .execute(&db.connection);
     }
-    return HttpResponse::Ok().json(ToDoItems::get_state())
+    return HttpResponse::Ok().json(ToDoItems::get_state(token.user_id))
 }

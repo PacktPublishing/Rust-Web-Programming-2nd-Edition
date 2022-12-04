@@ -25,5 +25,4 @@ lazy_static = "1.4.0"
 bcrypt = "0.13.0"
 uuid = {version = "1.0.0", features = ["serde", "v4"]}
 jsonwebtoken = "8.1.0"
-serde-pickle = "1.1.1" 
 redis = "0.21.5"

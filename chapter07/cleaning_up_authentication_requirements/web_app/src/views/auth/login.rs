@@ -1,6 +1,6 @@
 use crate::diesel;
 use diesel::prelude::*;
-use actix_web::{web, HttpResponse, http::header::ContentType, };
+use actix_web::{web, HttpResponse, Responder};
 
 use crate::database::DB;
 use crate::models::user::user::User;
@@ -10,20 +10,18 @@ use crate::jwt::JwToken;
 
 
 pub async fn login(credentials: web::Json<Login>, db: DB) -> HttpResponse {
-    let username: String = credentials.username.clone();
-    let password: String = credentials.password.clone();
 
     let users = users::table
-        .filter(users::columns::username.eq(username.as_str()))
+        .filter(users::columns::username.eq(credentials.username.clone()))
         .load::<User>(&db.connection).unwrap();
 
     if users.len() == 0 {
-        return HttpResponse::NotFound().await.unwrap()
+        return HttpResponse::NotFound().finish()
     } else if users.len() > 1 {
-        return HttpResponse::Conflict().await.unwrap()
+        return HttpResponse::Conflict().finish()
     }
 
-    match users[0].clone().verify(password) {
+    match users[0].verify(credentials.password.clone()) {
         true => {
             let user_id = users[0].clone().id;
             let token = JwToken::new(user_id);
@@ -31,10 +29,9 @@ pub async fn login(credentials: web::Json<Login>, db: DB) -> HttpResponse {
             let response = LoginResponse{token: raw_token.clone()};
             let body = serde_json::to_string(&response).unwrap();
             HttpResponse::Ok().append_header(("token", raw_token))
-                              .content_type(ContentType::json())
-                              .body(body)
+                              .json(&body)
         },
-        false => HttpResponse::Unauthorized().await.unwrap()
+        false => HttpResponse::Unauthorized().finish()
     }
 }
 

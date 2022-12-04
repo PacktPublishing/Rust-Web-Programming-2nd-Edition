@@ -39,24 +39,24 @@ pub struct JwToken {
 
 impl JwToken {
 
-    fn get_key() -> String {
+    pub fn get_key() -> String {
         let config = Config::new();
         let key_str = config.map.get("SECRET_KEY").unwrap().as_str().unwrap();
         return key_str.to_owned()
     }
 
-    fn encode(self) -> String {
+    pub fn encode(self) -> String {
         let key = EncodingKey::from_secret(JwToken::get_key().as_ref());
         let token = encode(&Header::default(), &self, &key).unwrap();
         return token
     }
 
-    fn new(user_id: i32) -> Self {
+    pub fn new(user_id: i32) -> Self {
         let timestamp = Utc::now();
         return JwToken { user_id, minted: timestamp};
     }
 
-    fn from_token(token: String) -> Option<Self> {
+    pub fn from_token(token: String) -> Option<Self> {
         let key = DecodingKey::from_secret(JwToken::get_key().as_ref());
         let token_result = decode::<JwToken>(&token, &key, &Validation::new(Algorithm::HS256));
         match token_result {

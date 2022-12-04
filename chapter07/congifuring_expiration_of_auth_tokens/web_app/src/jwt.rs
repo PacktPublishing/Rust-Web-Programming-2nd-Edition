@@ -97,7 +97,7 @@ impl FromRequest for JwToken {
                     },
                     Err(message) => {
                         println!("{}", message);
-                        if message == "ExpiredSignature".to_owned() {
+                        if message == "ExpiredSignature" {
                             return err(ErrorUnauthorized("token expired"))
                         }
                         return err(ErrorUnauthorized("token can't be decoded"))

@@ -29,7 +29,7 @@ async fn main() -> std::io::Result<()> {
             .wrap_fn(|req, srv|{
                 let passed: bool;
 
-                let mut site_counter = counter::Counter::load();
+                let mut site_counter = counter::Counter::load().unwrap();
                 site_counter.count += 1;
                 println!("{:?}", &site_counter);
                 site_counter.save();

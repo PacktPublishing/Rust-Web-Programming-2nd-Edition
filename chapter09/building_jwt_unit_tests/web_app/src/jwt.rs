@@ -115,12 +115,11 @@ impl FromRequest for JwToken {
 }
 
 
-
 #[cfg(test)]
 mod jwt_tests {
     use std::str::FromStr;
 
-    use super::JwToken;
+    use super::{JwToken, Config};
     use actix_web::{HttpRequest, HttpResponse, test::TestRequest, web, App};
     use actix_web::http::header::{HeaderValue, HeaderName, ContentType};
     use actix_web::test::{init_service, call_service};
@@ -131,8 +130,15 @@ mod jwt_tests {
     #[derive(Debug, Serialize, Deserialize)]
     pub struct ResponseFromTest {
         pub user_id: i32,
+        pub exp_minutes: i32
     }
 
+    #[test]
+    fn get_exp() {
+        let config = Config::new();
+        let minutes = config.map.get("EXPIRE_MINUTES").unwrap().as_i64().unwrap();
+        assert_eq!(120, minutes);
+    }
 
     #[test]
     fn get_key() {
@@ -160,7 +166,7 @@ mod jwt_tests {
     }
 
     async fn test_handler(token: JwToken, _: HttpRequest) -> HttpResponse {
-        return HttpResponse::Ok().json(json!({"user_id": token.user_id}))
+        return HttpResponse::Ok().json(json!({"user_id": token.user_id, "exp_minutes": 120}))
     }
 
     #[actix_web::test]
@@ -189,6 +195,7 @@ mod jwt_tests {
 
         let resp: ResponseFromTest = actix_web::test::call_and_read_body_json(&app, req).await;
         assert_eq!(5, resp.user_id);
+        assert!()
     }
 
     #[actix_web::test]

@@ -16,7 +16,7 @@ pub unique_id: String
 
 
 impl User {
-    pub fn verify(self, password: String) -> bool {
+    pub fn verify(&self, password: String) -> bool {
     return verify(password.as_str(),
     &self.password).unwrap()
     }

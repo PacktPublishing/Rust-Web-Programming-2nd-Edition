@@ -60,6 +60,6 @@ impl PartialEq for TaskStatus {
                     &TaskStatus::PENDING => true
                 }
             }
-        }    
+        }
     }
 }

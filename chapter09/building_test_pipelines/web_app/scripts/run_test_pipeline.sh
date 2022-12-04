@@ -42,7 +42,9 @@ echo $(curl --location --request GET 'http://localhost:8000/v1/auth/login' \
     "password": "test"
 }') > ./fresh_token.json
 
-python3 ready_newman.py
+#python3 ready_newman.py
+TOKEN=$(jq '.token' fresh_token.json)
+jq '.auth.apikey[0].value = '"$TOKEN"'' to_do_items.postman_collection.json > test_newman.json
 
 newman run test_newman.json
 
