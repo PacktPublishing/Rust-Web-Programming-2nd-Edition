@@ -5,9 +5,10 @@ fn main() {
     let two: i8 = one + 5;
     println!("{}", one);
     println!("{}", two);
-    
+
     let one = "one".to_string();
-    let two = one.clone();
+    let two = one;
+    // should break below
     println!("{}", one);
     println!("{}", two);
 }

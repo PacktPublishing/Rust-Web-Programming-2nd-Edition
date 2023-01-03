@@ -1,5 +1,3 @@
-
-
 macro_rules! capitalize {
     ($a: expr) => {
         let mut v: Vec<char> = $a.chars().collect();
@@ -7,9 +5,9 @@ macro_rules! capitalize {
         $a = v.into_iter().collect();
     }
 }
+
 fn main() {
     let mut x = String::from("test");
     capitalize!(x);
     println!("{}", x);
 }
-

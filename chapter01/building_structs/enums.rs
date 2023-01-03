@@ -1,9 +1,12 @@
 
+
 #[derive(Debug)]
 enum Friend {
     HUMAN(Box<Human>),
     NIL
 }
+
+
 
 #[derive(Debug)]
 struct Human {
@@ -13,15 +16,14 @@ struct Human {
     friend: Friend
 }
 
-fn main() {
 
+fn main() {
     let another_developer = Human{
         name: "Caroline Morton".to_string(),
         age:30,
         current_thought: "I need to code!!".to_string(),
         friend: Friend::NIL
     };
-
     let developer = Human{
         name: "Maxwell Flitton".to_string(),
         age: 32,
