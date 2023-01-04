@@ -1,38 +1,105 @@
+
+
 .App {
-  text-align: center;
+  background-color: #92a8d1;
+  font-family: Arial, Helvetica, sans-serif;
+  height: 100vh;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
+@media(min-width: 501px) and (max-width: 550px) {
+  .App {
+    padding: 1px;
+    display: grid;
+    grid-template-columns: 1fr 5fr 1fr;
+  }
+  .mainContainer {
+    grid-column-start: 2;
   }
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+
+@media(min-width: 551px) and (max-width: 1000px) {
+  .App {
+    padding: 1px;
+    display: grid;
+    grid-template-columns: 1fr 3fr 1fr;
+  }
+  .mainContainer {
+    grid-column-start: 2;
+  }
+}
+@media(min-width: 1001px) {
+  .App {
+    padding: 1px;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+  }
+  .mainContainer {
+    grid-column-start: 2;
+  }
+}
+
+.itemContainer {
+  background: #034f84;
+  margin: 0.3rem;
+}
+
+
+.itemContainer:hover {
+  background: #034f99;
+}
+
+
+.itemContainer p {
+  color: white;
+  display: inline-block;
+  margin: 0.5rem;
+  margin-right: 0.4rem;
+  margin-left: 0.4rem;
+}
+
+
+.actionButton {
+  display: inline-block;
+  float: right;
+  background: #f7786b;
+  border: none;
+  padding: 0.5rem;
+  padding-left: 2rem;
+  padding-right: 2rem;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+
+.actionButton:hover {
+  background: #f7686b;
+  color: black;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.inputContainer {
+  background: #034f84;
+  margin: 0.3rem;
+  margin-top: 2rem;
+}
+
+
+.inputContainer input {
+  display: inline-block;
+  margin: 0.4rem;
+}
+
+.header {
+  background: #034f84;
+  margin-bottom: 0.3rem;
+}
+
+
+.header p {
+  color: white;
+  display: inline-block;
+  margin: 0.5rem;
+  margin-right: 0.4rem;
+  margin-left: 0.4rem;
 }

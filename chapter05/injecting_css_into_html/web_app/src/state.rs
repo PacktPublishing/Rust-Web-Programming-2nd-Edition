@@ -7,13 +7,6 @@ use serde_json::value::Value;
 use serde_json::json;
 
 
-/// Reads data from a JSON file. 
-/// 
-/// # Arguments 
-/// * file_name (&str): the path to the JSON file 
-/// 
-/// # Returns 
-/// * (Map<String, Value>): Hashmap with Strings as keys and JSON values are values 
 pub fn read_file(file_name: &str) -> Map<String, Value> {
     let mut file = File::open(file_name.to_string()).unwrap();
 
@@ -26,9 +19,11 @@ pub fn read_file(file_name: &str) -> Map<String, Value> {
 }
 
 
-pub fn write_to_file(file_name: &str, state: &mut Map<String, Value>) {
+pub fn write_to_file(file_name: &str,
+                     state: &mut Map<String, Value>) {
     let new_data = json!(state);
-    fs::write(file_name.to_string(),
-    new_data.to_string()).expect(
-    "Unable to write file");
+    fs::write(
+        file_name.to_string(),
+        new_data.to_string()
+    ).expect("Unable to write file");
 }
