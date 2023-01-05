@@ -1,25 +1,934 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
   <component name="ChangeListManager">
-    <list default="true" id="1d4dae3a-6682-4da3-b3b9-a787e9a7380a" name="Changes" comment="">
-      <change beforePath="$PROJECT_DIR$/../chapter05/creating_custom_components/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../chapter05/creating_custom_components/web_app/javascript/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chapter05/creating_react_app/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../chapter05/creating_react_app/web_app/javascript/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chapter05/inheriting_components/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../chapter05/inheriting_components/web_app/javascript/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chapter05/injecting_css_into_html/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../chapter05/injecting_css_into_html/web_app/javascript/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chapter05/injecting_javascript_into_html/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../chapter05/injecting_javascript_into_html/web_app/javascript/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chapter05/lifting_css_into_react/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../chapter05/lifting_css_into_react/web_app/javascript/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chapter05/making_api_calls_in_react/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../chapter05/making_api_calls_in_react/web_app/javascript/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../chapter05/wrapping_react_in_electron/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/../chapter05/wrapping_react_in_electron/web_app/javascript/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/building_our_database/web_app/javascript/main.js" afterDir="false" />
+    <list default="true" id="a8b5dcea-ede2-40ba-8124-53a9935de181" name="Changes" comment="">
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/front_end/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/front_end/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/front_end/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/front_end/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/front_end/public/electron.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/front_end/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/front_end/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/front_end/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/front_end/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/front_end/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/front_end/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/front_end/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/front_end/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/front_end/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/front_end/src/components/CreateToDoItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/front_end/src/components/ToDoItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/front_end/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/front_end/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/front_end/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/front_end/src/reportWebVitals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/front_end/src/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/Cargo.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/config.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/css/components/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/diesel.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/javascript/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/migrations/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/migrations/00000000000000_diesel_initial_setup/down.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/migrations/00000000000000_diesel_initial_setup/up.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/migrations/2023-01-05-001816_create_to_do_items/down.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/migrations/2023-01-05-001816_create_to_do_items/up.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/scripts/wait_for_database.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/src/config.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/src/database.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/src/json_serialization/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/src/json_serialization/to_do_item.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/src/json_serialization/to_do_items.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/src/jwt.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/src/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/src/models/item/item.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/src/models/item/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/src/models/item/new_item.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/src/models/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/src/schema.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/src/to_do/enums.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/src/to_do/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/src/to_do/structs/base.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/src/to_do/structs/done.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/src/to_do/structs/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/src/to_do/structs/pending.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/src/views/app/content_loader.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/src/views/app/items.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/src/views/app/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/src/views/auth/login.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/src/views/auth/logout.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/src/views/auth/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/src/views/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/src/views/to_do/create.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/src/views/to_do/delete.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/src/views/to_do/edit.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/src/views/to_do/get.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/src/views/to_do/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/state.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/templates/components/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/templates/components/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/building_a_database_connection_pool/web_app/templates/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configuring_our_application/web_app/css/components/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configuring_our_application/web_app/migrations/2023-01-05-001816_create_to_do_items/down.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/configuring_our_application/web_app/migrations/2023-01-05-001816_create_to_do_items/up.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/front_end/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/front_end/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/front_end/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/front_end/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/front_end/public/electron.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/front_end/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/front_end/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/front_end/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/front_end/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/front_end/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/front_end/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/front_end/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/front_end/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/front_end/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/front_end/src/components/CreateToDoItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/front_end/src/components/ToDoItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/front_end/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/front_end/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/front_end/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/front_end/src/reportWebVitals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/front_end/src/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/Cargo.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/css/components/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/diesel.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/javascript/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/migrations/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/migrations/00000000000000_diesel_initial_setup/down.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/migrations/00000000000000_diesel_initial_setup/up.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/migrations/2023-01-05-001816_create_to_do_items/down.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/migrations/2023-01-05-001816_create_to_do_items/up.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/scripts/wait_for_database.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/src/database.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/src/json_serialization/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/src/json_serialization/to_do_item.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/src/json_serialization/to_do_items.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/src/jwt.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/src/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/src/processes.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/src/schema.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/src/state.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/src/to_do/enums.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/src/to_do/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/src/to_do/structs/base.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/src/to_do/structs/done.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/src/to_do/structs/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/src/to_do/structs/pending.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/src/to_do/traits/create.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/src/to_do/traits/delete.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/src/to_do/traits/edit.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/src/to_do/traits/get.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/src/to_do/traits/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/src/views/app/content_loader.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/src/views/app/items.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/src/views/app/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/src/views/auth/login.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/src/views/auth/logout.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/src/views/auth/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/src/views/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/src/views/to_do/create.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/src/views/to_do/delete.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/src/views/to_do/edit.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/src/views/to_do/get.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/src/views/to_do/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/state.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/templates/components/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/templates/components/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_our_app_to_postgres/web_app/templates/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/front_end/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/front_end/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/front_end/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/front_end/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/front_end/public/electron.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/front_end/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/front_end/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/front_end/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/front_end/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/front_end/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/front_end/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/front_end/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/front_end/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/front_end/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/front_end/src/components/CreateToDoItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/front_end/src/components/ToDoItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/front_end/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/front_end/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/front_end/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/front_end/src/reportWebVitals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/front_end/src/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/Cargo.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/css/components/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/javascript/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/scripts/wait_for_database.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/src/json_serialization/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/src/json_serialization/to_do_item.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/src/json_serialization/to_do_items.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/src/jwt.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/src/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/src/processes.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/src/state.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/src/to_do/enums.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/src/to_do/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/src/to_do/structs/base.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/src/to_do/structs/done.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/src/to_do/structs/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/src/to_do/structs/pending.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/src/to_do/traits/create.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/src/to_do/traits/delete.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/src/to_do/traits/edit.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/src/to_do/traits/get.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/src/to_do/traits/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/src/views/app/content_loader.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/src/views/app/items.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/src/views/app/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/src/views/auth/login.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/src/views/auth/logout.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/src/views/auth/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/src/views/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/src/views/to_do/create.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/src/views/to_do/delete.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/src/views/to_do/edit.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/src/views/to_do/get.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/src/views/to_do/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/state.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/templates/components/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/templates/components/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/connecting_to_postgres_with_diesel/web_app/templates/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/css/components/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/migrations/2023-01-05-001816_create_to_do_items/down.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/migrations/2023-01-05-001816_create_to_do_items/up.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/front_end/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/front_end/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/front_end/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/front_end/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/front_end/public/electron.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/front_end/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/front_end/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/front_end/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/front_end/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/front_end/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/front_end/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/front_end/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/front_end/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/front_end/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/front_end/src/components/CreateToDoItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/front_end/src/components/ToDoItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/front_end/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/front_end/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/front_end/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/front_end/src/reportWebVitals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/front_end/src/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/.env" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/Cargo.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/css/components/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/diesel.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/javascript/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/migrations/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/migrations/00000000000000_diesel_initial_setup/down.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/migrations/00000000000000_diesel_initial_setup/up.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/migrations/2023-01-05-001816_create_to_do_items/down.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/migrations/2023-01-05-001816_create_to_do_items/up.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/scripts/wait_for_database.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/src/database.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/src/json_serialization/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/src/json_serialization/to_do_item.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/src/json_serialization/to_do_items.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/src/jwt.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/src/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/src/models/item/item.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/src/models/item/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/src/models/item/new_item.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/src/models/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/src/schema.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/src/to_do/enums.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/src/to_do/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/src/to_do/structs/base.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/src/to_do/structs/done.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/src/to_do/structs/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/src/to_do/structs/pending.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/src/views/app/content_loader.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/src/views/app/items.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/src/views/app/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/src/views/auth/login.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/src/views/auth/logout.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/src/views/auth/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/src/views/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/src/views/to_do/create.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/src/views/to_do/delete.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/src/views/to_do/edit.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/src/views/to_do/get.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/src/views/to_do/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/state.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/templates/components/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/templates/components/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/deleting_data/web_app/templates/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/editing_the_database/web_app/css/components/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/editing_the_database/web_app/migrations/2023-01-05-001816_create_to_do_items/down.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/editing_the_database/web_app/migrations/2023-01-05-001816_create_to_do_items/up.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/css/components/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/migrations/2023-01-05-001816_create_to_do_items/down.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/migrations/2023-01-05-001816_create_to_do_items/up.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/css/components/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/migrations/2023-01-05-001816_create_to_do_items/down.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/migrations/2023-01-05-001816_create_to_do_items/up.sql" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/front_end/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/front_end/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/front_end/package-lock.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/front_end/package.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/front_end/public/electron.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/front_end/public/favicon.ico" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/front_end/public/index.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/front_end/public/logo192.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/front_end/public/logo512.png" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/front_end/public/manifest.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/front_end/public/robots.txt" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/front_end/src/App.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/front_end/src/App.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/front_end/src/App.test.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/front_end/src/components/CreateToDoItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/front_end/src/components/ToDoItem.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/front_end/src/index.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/front_end/src/index.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/front_end/src/logo.svg" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/front_end/src/reportWebVitals.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/front_end/src/setupTests.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/.gitignore" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/Cargo.lock" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/Cargo.toml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/css/base.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/css/components/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/css/main.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/docker-compose.yml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/javascript/main.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/scripts/wait_for_database.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/src/json_serialization/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/src/json_serialization/to_do_item.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/src/json_serialization/to_do_items.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/src/jwt.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/src/main.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/src/processes.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/src/state.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/src/to_do/enums.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/src/to_do/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/src/to_do/structs/base.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/src/to_do/structs/done.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/src/to_do/structs/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/src/to_do/structs/pending.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/src/to_do/traits/create.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/src/to_do/traits/delete.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/src/to_do/traits/edit.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/src/to_do/traits/get.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/src/to_do/traits/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/src/views/app/content_loader.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/src/views/app/items.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/src/views/app/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/src/views/auth/login.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/src/views/auth/logout.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/src/views/auth/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/src/views/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/src/views/to_do/create.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/src/views/to_do/delete.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/src/views/to_do/edit.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/src/views/to_do/get.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/src/views/to_do/mod.rs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/state.json" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/templates/components/header.css" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/templates/components/header.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/running_docker_in_the_background_with_bash_scripts/web_app/templates/main.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/using_docker_to_run_a_database/web_app/docker-compose.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/chapter06.iml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/chapter06.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/front_end/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/front_end/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/front_end/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/front_end/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/front_end/public/electron.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/front_end/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/front_end/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/front_end/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/front_end/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/front_end/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/front_end/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/front_end/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/front_end/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/front_end/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/front_end/src/components/CreateToDoItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/front_end/src/components/ToDoItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/front_end/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/front_end/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/front_end/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/front_end/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/front_end/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/Cargo.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/css/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/diesel.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/javascript/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/migrations/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/scripts/wait_for_database.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/src/json_serialization/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/src/json_serialization/to_do_item.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/src/json_serialization/to_do_items.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/src/jwt.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/src/main.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/src/processes.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/src/state.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/src/to_do/enums.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/src/to_do/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/src/to_do/structs/base.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/src/to_do/structs/done.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/src/to_do/structs/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/src/to_do/structs/pending.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/src/to_do/traits/create.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/src/to_do/traits/delete.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/src/to_do/traits/edit.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/src/to_do/traits/get.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/src/to_do/traits/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/src/views/app/content_loader.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/src/views/app/items.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/src/views/app/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/src/views/auth/login.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/src/views/auth/logout.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/src/views/auth/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/src/views/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/src/views/to_do/create.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/src/views/to_do/delete.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/src/views/to_do/edit.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/src/views/to_do/get.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/src/views/to_do/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/state.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/templates/components/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/templates/components/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/building_our_database/web_app/templates/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/front_end/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/front_end/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/front_end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/front_end/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/front_end/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/front_end/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/.env" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/web_app/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/web_app/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/web_app/Cargo.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/config.yml" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/web_app/config.yml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/web_app/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/web_app/css/main.css" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/web_app/javascript/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/javascript/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/javascript/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/javascript/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/migrations/2022-04-24-171018_create_to_do_items/down.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/migrations/2022-04-24-171018_create_to_do_items/up.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/src/config.rs" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/web_app/src/config.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/src/database.rs" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/web_app/src/database.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/src/json_serialization/to_do_item.rs" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/web_app/src/json_serialization/to_do_item.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/src/json_serialization/to_do_items.rs" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/web_app/src/json_serialization/to_do_items.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/src/jwt.rs" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/web_app/src/jwt.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/web_app/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/src/models/item/new_item.rs" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/web_app/src/models/item/new_item.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/src/models/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/web_app/src/models/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/src/to_do/enums.rs" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/web_app/src/to_do/enums.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/src/to_do/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/web_app/src/to_do/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/src/to_do/structs/base.rs" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/web_app/src/to_do/structs/base.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/src/to_do/structs/done.rs" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/web_app/src/to_do/structs/done.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/src/to_do/structs/pending.rs" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/web_app/src/to_do/structs/pending.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/src/views/app/content_loader.rs" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/web_app/src/views/app/content_loader.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/src/views/app/items.rs" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/web_app/src/views/app/items.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/src/views/auth/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/web_app/src/views/auth/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/src/views/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/web_app/src/views/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/src/views/to_do/create.rs" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/web_app/src/views/to_do/create.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/src/views/to_do/delete.rs" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/web_app/src/views/to_do/delete.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/src/views/to_do/edit.rs" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/web_app/src/views/to_do/edit.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/src/views/to_do/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/web_app/src/views/to_do/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/state.json" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/web_app/state.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/templates/components/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/web_app/templates/components/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/templates/components/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/web_app/templates/components/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/configuring_our_application/web_app/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/configuring_our_application/web_app/templates/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/front_end/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/front_end/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/front_end/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/front_end/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/front_end/public/electron.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/front_end/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/front_end/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/front_end/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/front_end/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/front_end/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/front_end/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/front_end/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/front_end/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/front_end/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/front_end/src/components/CreateToDoItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/front_end/src/components/ToDoItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/front_end/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/front_end/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/front_end/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/front_end/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/front_end/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/Cargo.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/Cargo.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/css/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/diesel.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/javascript/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/migrations/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/migrations/00000000000000_diesel_initial_setup/down.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/migrations/00000000000000_diesel_initial_setup/up.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/migrations/2022-04-24-171018_create_to_do_items/down.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/migrations/2022-04-24-171018_create_to_do_items/up.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/scripts/wait_for_database.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/src/database.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/src/json_serialization/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/src/json_serialization/to_do_item.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/src/json_serialization/to_do_items.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/src/jwt.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/src/main.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/src/processes.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/src/schema.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/src/state.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/src/to_do/enums.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/src/to_do/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/src/to_do/structs/base.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/src/to_do/structs/done.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/src/to_do/structs/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/src/to_do/structs/pending.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/src/to_do/traits/create.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/src/to_do/traits/delete.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/src/to_do/traits/edit.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/src/to_do/traits/get.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/src/to_do/traits/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/src/views/app/content_loader.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/src/views/app/items.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/src/views/app/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/src/views/auth/login.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/src/views/auth/logout.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/src/views/auth/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/src/views/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/src/views/to_do/create.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/src/views/to_do/delete.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/src/views/to_do/edit.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/src/views/to_do/get.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/src/views/to_do/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/state.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/templates/components/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/templates/components/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_our_app_to_postgresql/web_app/templates/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/front_end/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/front_end/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/front_end/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/front_end/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/front_end/public/electron.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/front_end/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/front_end/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/front_end/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/front_end/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/front_end/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/front_end/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/front_end/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/front_end/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/front_end/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/front_end/src/components/CreateToDoItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/front_end/src/components/ToDoItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/front_end/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/front_end/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/front_end/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/front_end/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/front_end/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/Cargo.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/css/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/diesel.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/javascript/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/migrations/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/migrations/00000000000000_diesel_initial_setup/down.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/migrations/00000000000000_diesel_initial_setup/up.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/migrations/2022-04-24-171018_create_to_do_items/down.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/migrations/2022-04-24-171018_create_to_do_items/up.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/scripts/wait_for_database.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/src/json_serialization/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/src/json_serialization/to_do_item.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/src/json_serialization/to_do_items.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/src/jwt.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/src/main.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/src/processes.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/src/schema.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/src/state.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/src/to_do/enums.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/src/to_do/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/src/to_do/structs/base.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/src/to_do/structs/done.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/src/to_do/structs/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/src/to_do/structs/pending.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/src/to_do/traits/create.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/src/to_do/traits/delete.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/src/to_do/traits/edit.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/src/to_do/traits/get.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/src/to_do/traits/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/src/views/app/content_loader.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/src/views/app/items.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/src/views/app/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/src/views/auth/login.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/src/views/auth/logout.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/src/views/auth/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/src/views/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/src/views/to_do/create.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/src/views/to_do/delete.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/src/views/to_do/edit.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/src/views/to_do/get.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/src/views/to_do/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/state.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/templates/components/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/templates/components/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/connecting_to_postgresql_with_diesel/web_app/templates/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/front_end/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/front_end/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/front_end/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/front_end/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/front_end/public/electron.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/front_end/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/front_end/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/front_end/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/front_end/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/front_end/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/front_end/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/front_end/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/front_end/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/front_end/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/front_end/src/components/CreateToDoItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/front_end/src/components/ToDoItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/front_end/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/front_end/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/front_end/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/front_end/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/front_end/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/Cargo.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/Cargo.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/config.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/css/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/diesel.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/javascript/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/migrations/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/migrations/00000000000000_diesel_initial_setup/down.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/migrations/00000000000000_diesel_initial_setup/up.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/migrations/2022-04-24-171018_create_to_do_items/down.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/migrations/2022-04-24-171018_create_to_do_items/up.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/scripts/wait_for_database.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/src/config.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/src/database.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/src/json_serialization/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/src/json_serialization/to_do_item.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/src/json_serialization/to_do_items.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/src/jwt.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/src/main.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/src/models/item/item.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/src/models/item/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/src/models/item/new_item.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/src/models/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/src/schema.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/src/to_do/enums.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/src/to_do/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/src/to_do/structs/base.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/src/to_do/structs/done.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/src/to_do/structs/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/src/to_do/structs/pending.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/src/views/app/content_loader.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/src/views/app/items.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/src/views/app/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/src/views/auth/login.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/src/views/auth/logout.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/src/views/auth/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/src/views/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/src/views/to_do/create.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/src/views/to_do/delete.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/src/views/to_do/edit.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/src/views/to_do/get.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/src/views/to_do/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/state.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/templates/components/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/templates/components/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_a_database_connection_pool/web_app/templates/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/front_end/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/front_end/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/front_end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/front_end/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/front_end/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/front_end/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/.env" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/Cargo.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/javascript/main.js" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/deleting_in_the_database/web_app/javascript/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/migrations/2022-04-24-171018_create_to_do_items/down.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/migrations/2022-04-24-171018_create_to_do_items/up.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/src/database.rs" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/src/database.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/src/json_serialization/to_do_item.rs" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/src/json_serialization/to_do_item.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/src/json_serialization/to_do_items.rs" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/src/json_serialization/to_do_items.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/src/jwt.rs" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/src/jwt.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/src/models/item/new_item.rs" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/src/models/item/new_item.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/src/models/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/src/models/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/src/processes.rs" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/src/processes.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/src/state.rs" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/src/state.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/src/to_do/enums.rs" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/src/to_do/enums.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/src/to_do/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/src/to_do/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/src/to_do/structs/base.rs" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/src/to_do/structs/base.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/src/to_do/structs/done.rs" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/src/to_do/structs/done.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/src/to_do/structs/pending.rs" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/src/to_do/structs/pending.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/src/to_do/traits/create.rs" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/src/to_do/traits/create.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/src/to_do/traits/delete.rs" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/src/to_do/traits/delete.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/src/to_do/traits/edit.rs" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/src/to_do/traits/edit.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/src/to_do/traits/get.rs" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/src/to_do/traits/get.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/src/views/app/content_loader.rs" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/src/views/app/content_loader.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/src/views/app/items.rs" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/src/views/app/items.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/src/views/auth/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/src/views/auth/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/src/views/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/src/views/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/src/views/to_do/create.rs" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/src/views/to_do/create.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/src/views/to_do/delete.rs" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/src/views/to_do/delete.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/src/views/to_do/edit.rs" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/src/views/to_do/edit.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/src/views/to_do/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/src/views/to_do/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/state.json" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/state.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/templates/components/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/templates/components/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/templates/components/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/templates/components/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/creating_our_data_models/web_app/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/creating_our_data_models/web_app/templates/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/front_end/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/front_end/README.md" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/front_end/package-lock.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/front_end/package.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/front_end/public/electron.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/front_end/public/favicon.ico" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/front_end/public/index.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/front_end/public/logo192.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/front_end/public/logo512.png" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/front_end/public/manifest.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/front_end/public/robots.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/front_end/src/App.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/front_end/src/App.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/front_end/src/App.test.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/front_end/src/components/CreateToDoItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/front_end/src/components/ToDoItem.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/front_end/src/index.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/front_end/src/index.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/front_end/src/logo.svg" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/front_end/src/reportWebVitals.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/front_end/src/setupTests.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/.env" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/.gitignore" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/Cargo.lock" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/Cargo.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/css/base.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/css/main.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/diesel.toml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/docker-compose.yml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/javascript/main.js" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/migrations/.gitkeep" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/migrations/00000000000000_diesel_initial_setup/down.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/migrations/00000000000000_diesel_initial_setup/up.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/migrations/2022-04-24-171018_create_to_do_items/down.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/migrations/2022-04-24-171018_create_to_do_items/up.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/scripts/wait_for_database.sh" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/database.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/json_serialization/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/json_serialization/to_do_item.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/json_serialization/to_do_items.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/jwt.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/main.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/models/item/item.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/models/item/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/models/item/new_item.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/models/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/processes.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/schema.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/state.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/to_do/enums.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/to_do/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/to_do/structs/base.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/to_do/structs/done.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/to_do/structs/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/to_do/structs/pending.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/to_do/traits/create.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/to_do/traits/delete.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/to_do/traits/edit.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/to_do/traits/get.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/to_do/traits/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/views/app/content_loader.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/views/app/items.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/views/app/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/views/auth/login.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/views/auth/logout.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/views/auth/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/views/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/views/to_do/create.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/views/to_do/delete.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/views/to_do/edit.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/views/to_do/get.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/src/views/to_do/mod.rs" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/state.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/templates/components/header.css" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/templates/components/header.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/deleting_in_the_database/web_app/templates/main.html" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/front_end/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/front_end/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/front_end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/front_end/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/front_end/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/front_end/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/.env" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/Cargo.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/javascript/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/migrations/2022-04-24-171018_create_to_do_items/down.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/migrations/2022-04-24-171018_create_to_do_items/up.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/src/database.rs" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/src/database.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/src/json_serialization/to_do_item.rs" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/src/json_serialization/to_do_item.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/src/json_serialization/to_do_items.rs" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/src/json_serialization/to_do_items.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/src/jwt.rs" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/src/jwt.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/src/models/item/new_item.rs" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/src/models/item/new_item.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/src/models/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/src/models/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/src/processes.rs" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/src/processes.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/src/state.rs" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/src/state.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/src/to_do/enums.rs" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/src/to_do/enums.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/src/to_do/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/src/to_do/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/src/to_do/structs/base.rs" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/src/to_do/structs/base.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/src/to_do/structs/done.rs" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/src/to_do/structs/done.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/src/to_do/structs/pending.rs" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/src/to_do/structs/pending.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/src/to_do/traits/create.rs" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/src/to_do/traits/create.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/src/to_do/traits/delete.rs" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/src/to_do/traits/delete.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/src/to_do/traits/edit.rs" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/src/to_do/traits/edit.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/src/to_do/traits/get.rs" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/src/to_do/traits/get.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/src/views/app/content_loader.rs" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/src/views/app/content_loader.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/src/views/app/items.rs" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/src/views/app/items.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/src/views/auth/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/src/views/auth/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/src/views/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/src/views/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/src/views/to_do/create.rs" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/src/views/to_do/create.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/src/views/to_do/delete.rs" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/src/views/to_do/delete.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/src/views/to_do/edit.rs" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/src/views/to_do/edit.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/src/views/to_do/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/src/views/to_do/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/state.json" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/state.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/templates/components/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/templates/components/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/templates/components/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/templates/components/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/editing_the_database/web_app/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/editing_the_database/web_app/templates/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/front_end/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/front_end/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/front_end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/front_end/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/front_end/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/front_end/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/.env" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/Cargo.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/javascript/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/migrations/2022-04-24-171018_create_to_do_items/down.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/migrations/2022-04-24-171018_create_to_do_items/up.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/database.rs" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/database.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/json_serialization/to_do_item.rs" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/json_serialization/to_do_item.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/json_serialization/to_do_items.rs" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/json_serialization/to_do_items.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/jwt.rs" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/jwt.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/models/item/new_item.rs" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/models/item/new_item.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/models/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/models/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/processes.rs" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/processes.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/state.rs" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/state.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/to_do/enums.rs" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/to_do/enums.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/to_do/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/to_do/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/to_do/structs/base.rs" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/to_do/structs/base.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/to_do/structs/done.rs" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/to_do/structs/done.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/to_do/structs/pending.rs" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/to_do/structs/pending.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/to_do/traits/create.rs" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/to_do/traits/create.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/to_do/traits/delete.rs" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/to_do/traits/delete.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/to_do/traits/edit.rs" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/to_do/traits/edit.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/to_do/traits/get.rs" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/to_do/traits/get.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/views/app/content_loader.rs" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/views/app/content_loader.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/views/app/items.rs" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/views/app/items.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/views/auth/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/views/auth/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/views/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/views/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/views/to_do/create.rs" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/views/to_do/create.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/views/to_do/delete.rs" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/views/to_do/delete.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/views/to_do/edit.rs" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/views/to_do/edit.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/views/to_do/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/src/views/to_do/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/state.json" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/state.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/templates/components/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/templates/components/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/templates/components/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/templates/components/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/getting_data_from_the_database/web_app/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/getting_data_from_the_database/web_app/templates/main.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/front_end/package-lock.json" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/front_end/package-lock.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/front_end/package.json" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/front_end/package.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/front_end/src/App.js" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/front_end/src/App.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/.env" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/.env" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/Cargo.lock" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/Cargo.lock" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/Cargo.toml" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/Cargo.toml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/css/base.css" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/css/base.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/css/main.css" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/css/main.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/docker-compose.yml" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/docker-compose.yml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/javascript/main.js" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/javascript/main.js" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/migrations/2022-04-24-171018_create_to_do_items/down.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/migrations/2022-04-24-171018_create_to_do_items/up.sql" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/database.rs" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/database.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/json_serialization/to_do_item.rs" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/json_serialization/to_do_item.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/json_serialization/to_do_items.rs" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/json_serialization/to_do_items.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/jwt.rs" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/jwt.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/main.rs" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/main.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/models/item/new_item.rs" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/models/item/new_item.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/models/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/models/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/processes.rs" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/processes.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/state.rs" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/state.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/to_do/enums.rs" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/to_do/enums.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/to_do/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/to_do/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/to_do/structs/base.rs" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/to_do/structs/base.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/to_do/structs/done.rs" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/to_do/structs/done.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/to_do/structs/pending.rs" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/to_do/structs/pending.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/to_do/traits/create.rs" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/to_do/traits/create.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/to_do/traits/delete.rs" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/to_do/traits/delete.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/to_do/traits/edit.rs" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/to_do/traits/edit.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/to_do/traits/get.rs" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/to_do/traits/get.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/views/app/content_loader.rs" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/views/app/content_loader.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/views/app/items.rs" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/views/app/items.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/views/auth/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/views/auth/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/views/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/views/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/views/to_do/create.rs" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/views/to_do/create.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/views/to_do/delete.rs" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/views/to_do/delete.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/views/to_do/edit.rs" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/views/to_do/edit.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/views/to_do/mod.rs" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/src/views/to_do/mod.rs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/state.json" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/state.json" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/templates/components/header.css" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/templates/components/header.css" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/templates/components/header.html" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/templates/components/header.html" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/inserting_into_the_database/web_app/templates/main.html" beforeDir="false" afterPath="$PROJECT_DIR$/inserting_into_the_database/web_app/templates/main.html" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -29,11 +938,16 @@
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$/.." />
   </component>
+  <component name="KubernetesApiPersistence">
+    <option name="context" value="arn:aws:eks:eu-west-2:121025753084:cluster/eks-development-patient-api-cluster" />
+  </component>
+  <component name="MacroExpansionManager">
+    <option name="directoryName" value="j0h76p7a" />
+  </component>
   <component name="MarkdownSettingsMigration">
     <option name="stateVersion" value="1" />
   </component>
-  <component name="ProjectId" id="2GBx6xsrJt5uvHu2AzqxLF8ZCoy" />
-  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectId" id="2Jsqj8R0udeZ9tlDzB59Es6mwVK" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showLibraryContents" value="true" />
@@ -43,19 +957,33 @@
     "RunOnceActivity.OpenProjectViewOnStart": "true",
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "WebServerToolWindowFactoryState": "false",
+    "last_opened_file_path": "/Users/maxwellflitton/Documents/github/books/rewrites/Rust-for-Web-Developers/chapter06",
+    "node.js.detected.package.eslint": "true",
+    "node.js.detected.package.tslint": "true",
+    "node.js.selected.package.eslint": "(autodetect)",
+    "node.js.selected.package.tslint": "(autodetect)",
     "nodejs_package_manager_path": "npm",
+    "org.rust.cargo.project.model.PROJECT_DISCOVERY": "true",
     "vue.rearranger.settings.migration": "true"
   }
 }]]></component>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$" />
+    </key>
+  </component>
+  <component name="RustProjectSettings">
+    <option name="toolchainHomeDirectory" value="$USER_HOME$/.cargo/bin" />
+  </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
     <task active="true" id="Default" summary="Default task">
-      <changelist id="1d4dae3a-6682-4da3-b3b9-a787e9a7380a" name="Changes" comment="" />
-      <created>1665875607854</created>
+      <changelist id="a8b5dcea-ede2-40ba-8124-53a9935de181" name="Changes" comment="" />
+      <created>1672877272443</created>
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
-      <updated>1665875607854</updated>
-      <workItem from="1665875609431" duration="56000" />
+      <updated>1672877272443</updated>
+      <workItem from="1672877273351" duration="5759000" />
     </task>
     <servers />
   </component>

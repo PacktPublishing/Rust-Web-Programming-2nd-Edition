@@ -1,10 +1,14 @@
 use diesel::prelude::*;
 use diesel::pg::PgConnection;
-
+use dotenv::dotenv;
+use std::env;
 use crate::config::Config;
 
 
 pub fn establish_connection() -> PgConnection {
-    let database_url = Config::new().map.get("DB_URL").unwrap().as_str().unwrap().to_string();
-    PgConnection::establish(&database_url).unwrap_or_else(|_| panic!("Error connecting to {}", database_url))
+    dotenv().ok();
+
+    let database_url = env::var("DATABASE_URL").expect("DATABASE_URL must be set");
+    PgConnection::establish(&database_url).unwrap_or_else(|_| panic!("Error connecting to {}",
+                                                                     database_url))
 }

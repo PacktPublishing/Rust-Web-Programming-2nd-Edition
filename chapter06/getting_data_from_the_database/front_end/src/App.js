@@ -41,7 +41,7 @@ class App extends Component {
           itemList.push(
               <ToDoItem key={item.title + item.status}
                         title={item.title}
-                        status={item.status}
+                        status={item.status.status}
                         passBackResponse={this.handleReturnedState}/>
           )
       })
