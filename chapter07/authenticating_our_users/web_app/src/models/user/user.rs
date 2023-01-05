@@ -1,6 +1,8 @@
 extern crate bcrypt;
+
 use diesel::{Queryable, Identifiable};
 use bcrypt::verify;
+
 use crate::schema::users;
 
 
@@ -17,7 +19,7 @@ pub struct User {
 
 impl User {
     pub fn verify(&self, password: String) -> bool {
-    return verify(password.as_str(),
-    &self.password).unwrap()
+        verify(password.as_str(),
+               &self.password).unwrap()
     }
 }
