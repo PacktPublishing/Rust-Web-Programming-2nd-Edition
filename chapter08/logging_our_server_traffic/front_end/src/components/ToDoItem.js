@@ -8,7 +8,7 @@ class ToDoItem extends Component {
     state = {
         "title": this.props.title,
         "status": this.props.status,
-        "button": this.processStatus(this.props.status)
+        "button": this.processStatus(this.props.status.status)
     }
 
     processStatus(status) {
@@ -28,20 +28,22 @@ class ToDoItem extends Component {
     }
 
     sendRequest = () => {
-        axios.post("http://127.0.0.1:8000/v1/item/" + this.state.button,
+        axios.post("http://127.0.0.1:8000/v1/item/" +
+            this.state.button,
             {
                 "title": this.state.title,
                 "status": this.inverseStatus(this.state.status)
             },
-        {headers: {"token": localStorage.getItem("token")}})
+            {headers: {"token": localStorage.getItem("user-token")}})
             .then(response => {
                 this.props.passBackResponse(response);
             }).catch(error => {
-                if (error.response.status === 401) {
-                    this.props.logout();
-                }
+            if (error.response.status === 401) {
+                this.props.logout();
+            }
         });
     }
+
 
     render() {
         return(
