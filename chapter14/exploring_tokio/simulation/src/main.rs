@@ -4,7 +4,7 @@ use std::{thread, time};
 
 async fn hello(input_int: i32) -> i32 {
     let five_seconds = time::Duration::from_secs(5);
-    thread::sleep(five_seconds);
+    tokio::time::sleep(five_seconds).await;
     println!("Hello, world! {}", input_int);
     return input_int
 }

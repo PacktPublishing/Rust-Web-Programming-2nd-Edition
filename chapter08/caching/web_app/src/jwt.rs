@@ -4,36 +4,18 @@ use actix_web::error::ErrorUnauthorized;
 use futures::future::{Ready, ok, err};
 
 use serde::{Deserialize, Serialize};
-use jsonwebtoken::{encode, decode, Header, EncodingKey, DecodingKey, Validation};
+use jsonwebtoken::{encode, decode, Header,
+                   EncodingKey, DecodingKey, Validation};
+
 use chrono::Utc;
 use crate::config::Config;
 
 
-/// The attributes extracted from the auth token hidding in the header.
-/// 
-/// # Attributes 
-/// * user_id (i32): the ID of the user who's token it belongs to 
-/// * language (Option<String>): the language of the user 
-/// * class_id (Option<i32>): the ID of the class the user is associated with
-/// 
-/// # Usage 
-/// This can be inserted into a view function like the following example:
-/// 
-/// ```rust 
-/// async fn test(token: jwt::JwToken) -> String {
-///     let user_id: i32 = token.user_id;
-///     return String::from("it's working")
-/// }
-/// ```
-/// What this does is extract the JWT from the header before it hits the view and passes it as a parameters into the 
-/// view.
-// #[serde_as]
 #[derive(Debug, Serialize, Deserialize)]
 pub struct JwToken {
     pub user_id: i32,
     pub exp: usize,
 }
-
 
 impl JwToken {
 
@@ -51,28 +33,29 @@ impl JwToken {
 
     pub fn new(user_id: i32) -> Self {
         let config = Config::new();
-        let minutes = config.map.get("EXPIRE_MINUTES").unwrap().as_i64().unwrap();
+        let minutes = config.map.get("EXPIRE_MINUTES")
+            .unwrap().as_i64().unwrap();
         let expiration = Utc::now()
-                                .checked_add_signed(chrono::Duration::minutes(minutes))
-                                .expect("valid timestamp")
-                                .timestamp();
+            .checked_add_signed(chrono::Duration::minutes(minutes))
+            .expect("valid timestamp")
+            .timestamp();
         return JwToken { user_id, exp: expiration as usize };
     }
 
     pub fn from_token(token: String) -> Result<Self, String> {
         let key = DecodingKey::from_secret(JwToken::get_key().as_ref());
-        let token_result = decode::<JwToken>(&token.as_str(), &key, &Validation::default());
+        let token_result = decode::<JwToken>(&token.as_str(), &key,
+                                             &Validation::default());
         match token_result {
             Ok(data) => {
                 return Ok(data.claims)
-            }, 
+            },
             Err(error) => {
                 let message = format!("{}", error);
                 return Err(message)
             }
         }
     }
-
 }
 
 
@@ -81,13 +64,12 @@ impl FromRequest for JwToken {
     type Future = Ready<Result<JwToken, Error>>;
 
     /// This gets fired when the JwToken is attached to a request. It fires before the request hits the view.
-    /// # Arguments 
-    /// The arguments are needed in order for the impl of FromRequest to work. 
-    /// 
+    /// # Arguments
+    /// The arguments are needed in order for the impl of FromRequest to work.
+    ///
     /// * req (&HttpRequest): the request that the token is going to be extracted from
     /// * _ (Payload): the payload stream (not used in this function but is needed)
     fn from_request(req: &HttpRequest, _: &mut Payload) -> Self::Future {
-
         match req.headers().get("token") {
             Some(data) => {
                 let raw_token = data.to_str().unwrap().to_string();
@@ -98,7 +80,6 @@ impl FromRequest for JwToken {
                         return ok(token)
                     },
                     Err(message) => {
-                        println!("{}", message);
                         if message == "ExpiredSignature".to_owned() {
                             return err(ErrorUnauthorized("token expired"))
                         }
@@ -112,4 +93,5 @@ impl FromRequest for JwToken {
         }
     }
 }
+
 

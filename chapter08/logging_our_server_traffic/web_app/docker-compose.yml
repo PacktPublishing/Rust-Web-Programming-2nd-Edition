@@ -13,7 +13,7 @@ services:
       - 'POSTGRES_DB=to_do'
       - 'POSTGRES_PASSWORD=password'
   redis:
-      container_name: 'to-do-redis'
-      image: 'redis:5.0.5'
-      ports:
-        - '6379:6379'
+    container_name: 'to-do-redis'
+    image: 'redis:5.0.5'
+    ports:
+      - '6379:6379'

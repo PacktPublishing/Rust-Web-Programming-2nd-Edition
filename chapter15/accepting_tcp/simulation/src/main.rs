@@ -14,8 +14,10 @@ async fn main() {
         tokio::spawn(async move {
             println!("thread starting {} starting", peer.to_string());
             let five_seconds = time::Duration::from_secs(5);
-            thread::sleep(five_seconds);
-            println!("thread {} finishing", peer.to_string());
+            let begin = time::Instant::now();
+            tokio::time::sleep(five_seconds);
+            let end = begin.elapsed();
+            println!("thread {} finishing {}", peer.to_string(), end.as_secs_f32());
         });
     }
 }

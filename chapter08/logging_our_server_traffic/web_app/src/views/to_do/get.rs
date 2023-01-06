@@ -4,5 +4,5 @@ use crate::jwt::JwToken;
 
 
 pub async fn get(token: JwToken) -> impl Responder {
-    return ToDoItems::get_state(token.user_id);
+    ToDoItems::get_state(token.user_id)
 }

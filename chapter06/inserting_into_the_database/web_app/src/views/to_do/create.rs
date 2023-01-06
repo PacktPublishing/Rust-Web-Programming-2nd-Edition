@@ -12,17 +12,13 @@ use crate::models::item::item::Item;
 use crate::schema::to_do;
 
 
-/// Creates a to-do item storing it in the state.json file. 
 pub async fn create(req: HttpRequest) -> HttpResponse {
-    let title: String = req.match_info().get("title"
-    ).unwrap().to_string();
-
+    let title: String = req.match_info().get("title").unwrap().to_string();
     let connection = establish_connection();
-    let items = to_do::table
-        .filter(to_do::columns::title.eq(&title.as_str()))
-        .order(to_do::columns::id.asc())
-        .load::<Item>(&connection)
-        .unwrap();
+    let items = to_do::table.filter(to_do::columns::title.eq(&title.as_str()))
+                            .order(to_do::columns::id.asc())
+                            .load::<Item>(&connection)
+                            .unwrap();
 
     if items.len() == 0 {
         let new_post = NewItem::new(title);
@@ -30,4 +26,6 @@ pub async fn create(req: HttpRequest) -> HttpResponse {
             .execute(&connection);
     }
     return HttpResponse::Ok().json(ToDoItems::get_state())
+
 }
+

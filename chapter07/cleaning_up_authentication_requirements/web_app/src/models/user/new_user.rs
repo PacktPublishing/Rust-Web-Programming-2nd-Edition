@@ -1,5 +1,3 @@
-extern crate bcrypt;
-
 use uuid::Uuid;
 use diesel::Insertable;
 use bcrypt::{DEFAULT_COST, hash};
@@ -18,9 +16,17 @@ pub struct NewUser {
 
 
 impl NewUser {
-    pub fn new(username: String, email: String, password: String) -> NewUser {
-        let hashed_password: String = hash(password.as_str(), DEFAULT_COST).unwrap();
+    pub fn new(username: String,
+               email: String, password: String) -> NewUser {
+        let hashed_password: String = hash(
+            password.as_str(), DEFAULT_COST
+        ).unwrap();
         let uuid = Uuid::new_v4().to_string();
-        return NewUser {username, email, password: hashed_password, unique_id: uuid}
+        return NewUser {
+            username,
+            email,
+            password: hashed_password,
+            unique_id: uuid
+        }
     }
 }
