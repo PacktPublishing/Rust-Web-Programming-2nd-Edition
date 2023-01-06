@@ -1,9 +1,16 @@
 use tokio::sync::{mpsc, oneshot, mpsc::Sender};
 
 
+#[derive(Debug, Clone)]
+pub enum Order {
+    BUY,
+    SELL
+}
+
+
 #[derive(Debug)]
 pub struct Message {
-    pub order: String,
+    pub order: Order,
     pub ticker: String,
     pub amount: f32,
     pub respond_to: oneshot::Sender<u32>
@@ -18,16 +25,22 @@ pub struct OrderBookActor {
 
 impl OrderBookActor {
     fn new(receiver: mpsc::Receiver<Message>, investment_cap: f32) -> Self {
-        return OrderBookActor { receiver, total_invested: 0.0, investment_cap }
+        return OrderBookActor {
+            receiver,
+            total_invested: 0.0,
+            investment_cap
+        }
     }
 
     fn handle_message(&mut self, message: Message) {
         if message.amount + self.total_invested >= self.investment_cap {
-            println!("rejecting purchase, total invested: {}", self.total_invested);
+            println!("rejecting purchase, total invested: {}",
+                     self.total_invested);
             let _ = message.respond_to.send(0);
         } else {
             self.total_invested += message.amount;
-            println!("processing purchase, total invested: {}", self.total_invested);
+            println!("processing purchase, total invested: {}",
+                     self.total_invested);
             let _ = message.respond_to.send(1);
         }
     }
@@ -41,28 +54,31 @@ impl OrderBookActor {
 }
 
 
+
 struct BuyOrder {
     pub ticker: String,
     pub amount: f32,
-    pub order: String,
+    pub order: Order,
     pub sender: Sender<Message>
 }
 
 impl BuyOrder {
-
     fn new(amount: f32, ticker: String, sender: Sender<Message>) -> Self {
-        return BuyOrder { ticker, amount, order: "buy".to_owned(), sender }
+        return BuyOrder { ticker, amount,
+            order: Order::BUY, sender }
     }
+
     async fn send(self) {
         let (send, recv) = oneshot::channel();
-        let message = Message { order: self.order, amount: self.amount, ticker: self.ticker, respond_to: send};
+        let message = Message { order: self.order,
+            amount: self.amount,
+            ticker: self.ticker, respond_to: send};
         let _ = self.sender.send(message).await;
         match recv.await {
             Err(e) => println!("{}", e),
-            Ok(outcome) =>  println!("here is the outcome: {}", outcome)
+            Ok(outcome) => println!("here is the outcome: {}", outcome)
         }
     }
-
 }
 
 
@@ -76,13 +92,16 @@ async fn main() {
             let buy_actor = BuyOrder::new(5.5, "BYND".to_owned(), tx_one.clone());
             buy_actor.send().await;
         }
+        drop(tx_one);
     });
     tokio::spawn(async move {
         for _ in 0..5 {
             let buy_actor = BuyOrder::new(5.5, "PLTR".to_owned(), tx.clone());
             buy_actor.send().await;
         }
+        drop(tx);
     });
+
     let actor = OrderBookActor::new(rx, 20.0);
     actor.run().await;
 }

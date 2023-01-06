@@ -3,8 +3,15 @@ use tokio::time::{sleep, Duration};
 
 
 #[derive(Debug, Clone)]
+pub enum Order {
+    BUY,
+    SELL
+}
+
+
+#[derive(Debug, Clone)]
 pub struct Message {
-    pub order: String,
+    pub order: Order,
     pub ticker: String,
     pub amount: f32
 }
@@ -16,9 +23,9 @@ async fn main() {
     let (tx, mut rx) = mpsc::channel::<Message>(1);
 
     let orders = [
-        Message { order: "buy".to_owned(), amount: 5.5, ticker: "BYND".to_owned()},
-        Message { order: "buy".to_owned(), amount: 5.5, ticker: "NET".to_owned()},
-        Message { order: "buy".to_owned(), amount: 5.5, ticker: "PLTR".to_owned()},
+        Message { order: Order::BUY, amount: 5.5, ticker: "BYND".to_owned()},
+        Message { order: Order::BUY, amount: 5.5, ticker: "NET".to_owned()},
+        Message { order: Order::BUY, amount: 5.5, ticker: "PLTR".to_owned()},
     ];
 
     tokio::spawn(async move {
@@ -27,7 +34,6 @@ async fn main() {
                 println!("send error: {:?}", e);
                 return;
             }
-            // let order = Message { order: "buy".to_owned(), amount: 5.5, ticker: "BYND".to_owned()};
             println!("sent: {:?}", order);
         }
     });
