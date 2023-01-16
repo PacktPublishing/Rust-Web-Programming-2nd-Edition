@@ -1,9 +1,0 @@
-version: "3.7"
-
-services:
-
-    redis:
-      container_name: 'queue-redis'
-      image: 'redis'
-      ports:
-        - '6379:6379'
