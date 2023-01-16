@@ -1,0 +1,1 @@
+cargo:rustc-cfg=tokio_no_const_mutex_new
