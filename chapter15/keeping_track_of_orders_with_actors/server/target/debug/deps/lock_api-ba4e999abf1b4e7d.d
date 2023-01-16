@@ -1,0 +1,10 @@
+/Users/maxwellflitton/Documents/github/books/rewrites/Rust-for-Web-Developers/chapter15/accepting_tcp/server/target/debug/deps/lock_api-ba4e999abf1b4e7d.rmeta: /Users/maxwellflitton/.cargo/registry/src/github.com-1ecc6299db9ec823/lock_api-0.4.9/src/lib.rs /Users/maxwellflitton/.cargo/registry/src/github.com-1ecc6299db9ec823/lock_api-0.4.9/src/mutex.rs /Users/maxwellflitton/.cargo/registry/src/github.com-1ecc6299db9ec823/lock_api-0.4.9/src/remutex.rs /Users/maxwellflitton/.cargo/registry/src/github.com-1ecc6299db9ec823/lock_api-0.4.9/src/rwlock.rs
+
+/Users/maxwellflitton/Documents/github/books/rewrites/Rust-for-Web-Developers/chapter15/accepting_tcp/server/target/debug/deps/liblock_api-ba4e999abf1b4e7d.rlib: /Users/maxwellflitton/.cargo/registry/src/github.com-1ecc6299db9ec823/lock_api-0.4.9/src/lib.rs /Users/maxwellflitton/.cargo/registry/src/github.com-1ecc6299db9ec823/lock_api-0.4.9/src/mutex.rs /Users/maxwellflitton/.cargo/registry/src/github.com-1ecc6299db9ec823/lock_api-0.4.9/src/remutex.rs /Users/maxwellflitton/.cargo/registry/src/github.com-1ecc6299db9ec823/lock_api-0.4.9/src/rwlock.rs
+
+/Users/maxwellflitton/Documents/github/books/rewrites/Rust-for-Web-Developers/chapter15/accepting_tcp/server/target/debug/deps/lock_api-ba4e999abf1b4e7d.d: /Users/maxwellflitton/.cargo/registry/src/github.com-1ecc6299db9ec823/lock_api-0.4.9/src/lib.rs /Users/maxwellflitton/.cargo/registry/src/github.com-1ecc6299db9ec823/lock_api-0.4.9/src/mutex.rs /Users/maxwellflitton/.cargo/registry/src/github.com-1ecc6299db9ec823/lock_api-0.4.9/src/remutex.rs /Users/maxwellflitton/.cargo/registry/src/github.com-1ecc6299db9ec823/lock_api-0.4.9/src/rwlock.rs
+
+/Users/maxwellflitton/.cargo/registry/src/github.com-1ecc6299db9ec823/lock_api-0.4.9/src/lib.rs:
+/Users/maxwellflitton/.cargo/registry/src/github.com-1ecc6299db9ec823/lock_api-0.4.9/src/mutex.rs:
+/Users/maxwellflitton/.cargo/registry/src/github.com-1ecc6299db9ec823/lock_api-0.4.9/src/remutex.rs:
+/Users/maxwellflitton/.cargo/registry/src/github.com-1ecc6299db9ec823/lock_api-0.4.9/src/rwlock.rs:
