@@ -17,3 +17,5 @@ dotenv = "0.15.0"
 chrono = "0.4.19"
 serde_yaml = "0.8.23"
 lazy_static = "1.4.0"
+bcrypt = "0.13.0"
+uuid = {version = "1.0.0", features = ["serde", "v4"]}

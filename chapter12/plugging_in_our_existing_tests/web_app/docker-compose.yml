@@ -17,12 +17,12 @@ services:
       image: 'redis:5.0.5'
       ports:
         - '6379:6379'
-  rust_app:
-      container_name: "to-do-app"
-      image: "rust_app"
-      restart: always
-      ports:
-        - "8000:8000"
-      volumes:
-        - ./test_config.yml:/config.yml
+  # rust_app:
+      # container_name: "to-do-app"
+      # image: "rust_app"
+      # restart: always
+      # ports:
+      #   - "8000:8000"
+      # volumes:
+      #   - ./test_config.yml:/config.yml
       

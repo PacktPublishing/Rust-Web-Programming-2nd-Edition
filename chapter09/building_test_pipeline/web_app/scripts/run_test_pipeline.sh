@@ -15,10 +15,17 @@ do
 done
 
 
+cargo build
+cargo test
+
+
 # run server in background
 cargo run config.yml &
 SERVER_PID=$!
 sleep 5
+
+
+diesel migration run
 
 
 # create the user
@@ -30,7 +37,6 @@ curl --location --request POST 'http://localhost:8000/v1/user/create' \
     "password": "test"
 }'
 
-
 # login getting a fresh token
 echo $(curl --location --request GET 'http://localhost:8000/v1/auth/login' \
 --header 'Content-Type: application/json' \
@@ -41,11 +47,9 @@ echo $(curl --location --request GET 'http://localhost:8000/v1/auth/login' \
 
 
 TOKEN=$(jq '.token' fresh_token.json)
-jq '.auth.apikey[0].value = '"$TOKEN"''
-to_do_items.postman_collection.json > test_newman.json
+jq '.auth.apikey[0].value = '"$TOKEN"'' to_do_items.postman_collection.json > test_newman.json
 
 newman run test_newman.json
-
 
 rm ./test_newman.json
 rm ./fresh_token.json
