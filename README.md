@@ -70,3 +70,8 @@ is a software engineer who works for the open source financial loss modeling fou
 ## Other books by the author
 * [Speed Up Your Python with Rust](https://www.packtpub.com/product/speed-up-your-python-with-rust/9781801811446?_ga=2.256683080.2102657620.1674030605-730924991.1670395016)
 * [Rust Web Programming](https://www.packtpub.com/product/rust-web-programming/9781800560819?_ga=2.168798562.2102657620.1674030605-730924991.1670395016)
+
+### Download a free PDF
+
+ <i>If you have already purchased a print or Kindle version of this book, you can get a DRM-free PDF version at no cost.<br>Simply click on the link to claim your free PDF.</i>
+<p align="center"> <a href="https://packt.link/free-ebook/9781803234694">https://packt.link/free-ebook/9781803234694 </a> </p>
