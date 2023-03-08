@@ -55,6 +55,12 @@ With the following software and hardware list you can run all code files present
 
 We also provide a PDF file that has color images of the screenshots/diagrams used in this book. [Click here to download it](https://packt.link/Z1lgk).
 
+<!--
+## Errata
+-->
+<!--
+* Page 29 (line 10): **one** _should be_ **two**
+-->
 
 ### Related products
 * Web Development with Julia and Genie [[Packt]](https://www.packtpub.com/product/web-development-with-julia-and-genie/9781801811132) [[Amazon]](https://www.amazon.com/Development-Julia-Genie-hands-high-performance/dp/180181113X)
